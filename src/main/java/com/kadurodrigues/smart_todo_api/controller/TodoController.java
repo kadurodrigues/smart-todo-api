@@ -1,5 +1,6 @@
-package com.kadurodrigues.smart_todo_api.model;
+package com.kadurodrigues.smart_todo_api.controller;
 
+import com.kadurodrigues.smart_todo_api.model.Todo;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
