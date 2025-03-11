@@ -29,7 +29,7 @@ public class TodoController {
         }
         Todo newTodo = new Todo(todo.getText(), todo.isCompleted());
         return todoRepository.save(newTodo);
-    };
+    }
 
     @PutMapping("/{id}")
     public Todo updateTodo(@PathVariable String id, @RequestBody Todo todoDetails) {

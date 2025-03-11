@@ -1,0 +1,13 @@
+# suppress inspection "UnresolvedTag" for the entire file
+services:
+  - type: web
+    name: smart-todo-api
+    env: java
+    plan: free
+    buildCommand: mvn clean package -DskipTests
+    startCommand: java -jar target/smart-todo-api-0.0.1-SNAPSHOT.jar
+    runtime: openjdk17
+    disks:
+      - name: data
+        mountPath: /mnt/disk
+        sizeGB: 1
